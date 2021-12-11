@@ -49,7 +49,7 @@ function NavBar() {
           </li>
           <li>
             <NavLink className="nav" to="/mylist">
-              My List
+              My Movie Lists
             </NavLink>
           </li>
           {isModalOpen ? (
