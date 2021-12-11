@@ -1,0 +1,13 @@
+.search_style {
+  border: solid 1px white;
+  background-color: white;
+  width: 200px;
+  height: 21px;
+}
+.search {
+  position: absolute;
+  top: 44px;
+  left: 0px;
+  height: 100vh;
+  background: #111;
+}

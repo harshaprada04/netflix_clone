@@ -1,0 +1,28 @@
+.header_title{
+    color:red;
+    font-size: 35px;
+    margin-left: 10%;
+}
+.list_item{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    gap: 35px;
+}
+.main{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: #111;
+    width: 100vw;
+}
+.nav{
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    margin-left: 35px;
+    opacity: 0.65;
+}
+.nav:hover{
+    opacity: 1;
+}
