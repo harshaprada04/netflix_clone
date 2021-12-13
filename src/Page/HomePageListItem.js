@@ -24,12 +24,12 @@ function HomePageListItem(props) {
         <Card
           poster_path={props.poster_path}
           backdrop_path={props.backdrop_path}
-          title={props.title_original}
+          original_title={props.original_title}
           name={props.name}
           key={props.id}
           id={props.id}
           isOriginal={props.isOriginal}
-          vote={props.vote}
+          vote_average={props.vote_average}
           overview={props.overview}
           isOriginal={props.isOriginal}
         >

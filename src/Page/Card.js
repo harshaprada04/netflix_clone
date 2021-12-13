@@ -18,10 +18,12 @@ function Card(props) {
       listContext.listHandler({
         poster_path: props.poster_path,
         backdrop_path: props.backdrop_path,
-        title: props.title_original,
+        original_title: props.original_title,
         name: props.name,
         id: props.id,
         isOriginal: props.isOriginal,
+        overview:props.overview,
+        vote_average:props.vote_average
       });
     }
   }
@@ -41,9 +43,8 @@ function Card(props) {
   return (
     <div className="card">
       <h2 className="list_name">
-        {props.name ? props.name : props.title}
-        
-        <span>{props.vote}</span>
+        {props.name ? props.name : props.original_title}
+        <span>{props.vote_average}</span>
       </h2>
       <h3 className="list_overview">{props.overview}</h3>
       <button className="play_button" onClick={playHandler}>

@@ -3,6 +3,7 @@ import { useState } from "react";
 
 const Context = createContext({
   favorite: [],
+  listSize:"",
    listHandler: (myList) => {},
    removeListHandler: (listId) => {},
    isInList: (listId) => {},
@@ -29,7 +30,8 @@ export function ContextProvider(props) {
     setFavorite: setFavorite,
     listHandler: listHandler,
     removeListHandler: removeListHandler,
-    isInList:isInList
+    isInList:isInList,
+    listSize:favorite.length
   };
   return (
     <div>

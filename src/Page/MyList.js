@@ -6,10 +6,12 @@ import "./myList.css"
 
 function MyList(){
     const listContext=useContext(Context);
-    return(
-        <div className="list">
-        <HomePageList title="My List" movieList={listContext.favorite} isMyList /> 
-        </div>
-    )
+    console.log(listContext.listSize)   
+   
+        return(
+            <div className="list">
+           {listContext.listSize===0 ? <p>Add Content to My List......</p>:<HomePageList title="My List" movieList={listContext.favorite} isMyList />    }
+            </div>
+        ) 
 }
 export default MyList;

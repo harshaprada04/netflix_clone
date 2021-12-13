@@ -15,7 +15,6 @@ function SearchPage() {
         value={input}
         onChange={(e) => setInput(e.target.value)}
       ></input>
-
       <SearchEngine input={input} />
     </div>
   );

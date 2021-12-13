@@ -10,7 +10,6 @@
 .movieLists{
     display: flex;  
     align-items: flex-start;
-    justify-content: space-between;
     overflow-y: hidden;
     overflow-x: scroll;
     padding: 10px 10px 10px 0px;

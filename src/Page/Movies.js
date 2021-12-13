@@ -13,6 +13,9 @@ function Movies(){
         <HomePage title="Romantic Movies" fetechURL={requests.romance_movies} />
         <HomePage title="Malayalam Movies" fetechURL={requests.malayalam_movies} />
         <HomePage title="Science Fiction Movies" fetechURL={requests.science_fiction_movies} />
+        <HomePage title="Documentary Movies" fetechURL={requests.documentary} />
+        <HomePage title="Western Movies" fetechURL={requests.western} />
+        <HomePage title="Family Movies" fetechURL={requests.family} />
         </div>
     )
 }

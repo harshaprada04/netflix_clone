@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 
 import SearchPage from "../Page/SearchPage";
 
+
 function NavBar() {
   const [isModalOpen, setModalOpen] = useState(false);
   const ref = useRef();
@@ -49,7 +50,7 @@ function NavBar() {
           </li>
           <li>
             <NavLink className="nav" to="/mylist">
-              My Movie Lists
+              My Lists
             </NavLink>
           </li>
           {isModalOpen ? (
@@ -59,7 +60,7 @@ function NavBar() {
               </NavLink>
             </li>
           ) : (
-            <button onClick={() => setModalOpen(true)}>Serach</button>
+            <button style={{background:"gray", color:"white", width:"52px", height:"22px", fontSize:"13px"}}onClick={() => setModalOpen(true)}> Search</button>
           )}
         </ul>
       </nav>
