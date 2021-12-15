@@ -9,4 +9,8 @@
   top: 44px;
   left: 0px;
   height: 100vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
+
+    

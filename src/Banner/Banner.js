@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router";
-import MyList from "../Page/MyList";
 import "./banner.css";
 
 function Banner(props) {
@@ -21,7 +20,7 @@ function Banner(props) {
   return (
     <div className="banner">
     <div className="banner-content">
-      <h2 className="banner_title">{movies.name?movies.name:movies.original_title}</h2>
+      <h2 className="banner_title">{movies.name?movies.name:movies.original_name}</h2>
       <button className="banner_button">Play</button>
       <button className="banner_button" onClick={()=>{navigation("/mylist")}}>My List</button>
       <p className="banner_description">{truncate(movies.overview,150)}</p>
